@@ -1,0 +1,102 @@
+/* ===== Navbar ===== */
+.navbar {
+    position: fixed;
+    background-color: #1a1a2e;
+    padding: 0 5px;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items:flex-start;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Brand / Logo */
+.navbar .navbar-brand {
+    position:fixed ;
+    color: var(--background-color);
+    margin-right: 200px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 0.1cm;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar .navbar-brand:hover {
+    color: #028cff;
+}
+
+/* Menu Items */
+.navbar .nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar .nav-menu li {
+    margin: 0;
+}
+
+.navbar .nav-menu li a {
+    display: block;
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 12px 25px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    border-left: 3px solid transparent;
+}
+
+.navbar .nav-menu li a:hover {
+    background-color: rgba(2, 140, 255, 0.15);
+    color: #028cff;
+    border-left: 3px solid #028cff;
+}
+
+.navbar .nav-menu li a.active {
+    background-color: rgba(2, 140, 255, 0.2);
+    color: #028cff;
+    border-left: 3px solid #028cff;
+    font-weight: bold;
+}
+
+/* ===== Responsive (Mobile) ===== */
+@media (max-width: 768px) {
+
+    .navbar .navbar-brand {
+        width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .navbar .navbar-menu {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .navbar .nav-menu li a {
+        padding: 10px 15px;
+        border-left: none;
+        border-bottom: 3px solid transparent;
+    }
+
+    .navbar .nav-menu li a:hover,
+    .navbar .nav-menu li a.active {
+        border-left: none;
+        border-bottom: 3px solid #028cff;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    #footer {
+        margin-left: 0;
+    }
+}
