@@ -4,13 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../assets/style.css">
-    <link rel="stylesheet" href="../assets/navbar.css">
 </head>
 <body>
 
     <?php 
-    include '../assets/navbar.php';
+    include '../assets/navbar1.php';
     ?>
     <div class="content">
         <h1>Selamat Datang di</h1>

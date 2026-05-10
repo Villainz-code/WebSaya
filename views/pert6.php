@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../assets/style.css">
-    <link rel="stylesheet" href="../assets/navbar.css">
+    <?php include("../assets/header.php");?>
     <style>
         * {
             box-sizing: border-box;
@@ -109,13 +108,13 @@
     </style>
 </head>
 
-<body>
-    <?php
-    include '../assets/navbar.php';
-    ?>
-    <div class="content">
-        <div class="container">
-            <h1>Formulir Registrasi</h1>
+<body   class="layout-fixed sidebar-expand-lg bg-body-tertiary">
+    <div class="app-wrapper">
+        <?php include("../assets/navbar1.php");?>
+        <?php include("../assets/sidebar.php");?>
+        <div class="app-main">
+            <div class="container">
+                <h1>Formulir Registrasi</h1>
             <p class="deskripsi">Silakan isi data di bawah ini untuk melakukan pendaftaran</p>
 
             <form action="proses-pendaftaran.php" method="post">
@@ -188,9 +187,11 @@
                 <button type="submit">Daftar</button>
                 <button type="reset" class="reset">Reset</button>
             </form>
+            </div>
         </div>
     </div>
-
+    <?php include("../assets/footer.php");?>
+    <?php include("../assets/script.php");?>
 </body>
 
 </html>
