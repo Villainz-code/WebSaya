@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
     <aside class="app-sidebar bg-body-secondary shadow" data-bs-theme="dark">
         <!--begin::Sidebar Brand-->
         <div class="sidebar-brand">
@@ -115,6 +107,12 @@
                     <a href="/WebSaya/views/pert7.php" class="nav-link">
                       <i class="nav-icon bi bi-circle"></i>
                       <p>Pertemuan 7</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/WebSaya/views/pert7.php" class="nav-link">
+                      <i class="nav-icon bi bi-circle"></i>
+                      <p>Pertemuan 11</p>
                     </a>
                   </li>
                 </ul>
@@ -537,5 +535,3 @@
         </div>
         <!--end::Sidebar Wrapper-->
       </aside>
-</body>
-</html>
